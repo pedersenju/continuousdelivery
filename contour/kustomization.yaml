@@ -2,16 +2,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 generatorOptions:
   disableNameSuffixHash: true
-
 resources:
-- package-install.yml
-
-
+- contour-package-install.yaml
 secretGenerator:
 - name: contour-packages-values
-  namespace: infra-packages
+  namespace: packages
   files:
-  - values.yml
+  - contour.yaml
   type: Opaque
   options:
     annotations:
