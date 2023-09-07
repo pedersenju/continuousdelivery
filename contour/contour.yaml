@@ -11,9 +11,6 @@ envoy:
  service:
    type: LoadBalancer
    annotations: {}
-  #  nodePorts:
-  #    http: null
-  #    https: null
    externalTrafficPolicy: Cluster
    disableWait: false
  hostPorts:
