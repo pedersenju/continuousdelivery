@@ -10,7 +10,7 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: fluxcd-poc
+    name: autoliv-flux
     namespace: tanzu-continuousdelivery-resources
 
 
