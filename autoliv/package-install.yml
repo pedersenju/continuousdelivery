@@ -5,6 +5,7 @@ metadata:
   name: contour
   namespace: infra-packages
 spec:
+  serviceAccountName: default
   packageRef:
     refName: contour.tanzu.vmware.com
     versionSelection:
